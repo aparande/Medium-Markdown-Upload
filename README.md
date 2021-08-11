@@ -26,6 +26,11 @@ optional arguments:
 ```
 
 ## Images
-Currently, the script does not support uploading images on your local machine to
-Medium. However, remote images can be included by using a "<img>" tag in your
-Markdown.
+Medium will handle remote images. They can be placed in either a <img> tag or
+the standard markdown image syntax `![alt text](url "caption")`.
+
+For local images, they will be uploaded to Medium, and the markdown source will
+be updated the URL of the image on Medium. In order for the script to detect
+local images, they must be placed using the standard image syntax `![alt
+text](url "caption")`. If the image does not match this format, it will not be
+uploaded to Medium.
