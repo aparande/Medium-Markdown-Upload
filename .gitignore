@@ -1,3 +1,19 @@
 .env
+
+# Ignore everywhere
 *.png
 *.jpg
+*.jpeg
+*.md
+__pycache__
+*.bkp
+*.ipynb
+.ipynb_checkpoints
+*.docx
+*.zip
+*.svg
+*.xcf
+*.key
+
+# Ignore in subdirectories
+*/*.py
